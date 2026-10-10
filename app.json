@@ -1,25 +1,54 @@
 {
   "expo": {
     "name": "MNPortfolio",
-    "slug": "MNPortfolio",
+    "slug": "mnportfolio",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "mnportfolio",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1120"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.munyaneza.mnportfolio"
     },
     "android": {
+      "package": "com.munyaneza.mnportfolio",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "monochromeImage": "./assets/android-icon-monochrome.png",
+        "backgroundColor": "#0B1120"
       },
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "MNPortfolio needs access to your photos so you can set a profile picture.",
+          "cameraPermission": "MNPortfolio needs camera access so you can take a profile picture."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c8816d19-9ca8-47c1-bb35-880ad2fe31cb"
+      }
+    },
+    "owner": "saaaan"
   }
 }
