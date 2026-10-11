@@ -45,3 +45,8 @@ git clone https://github.com/Ngabo-Peacemaker1/MOB_A2_2527861.git
 cd MOB_A2_2527861
 npm install
 npx expo start
+    ## More
+
+    - **apk link https://github.com/Ngabo-Peacemaker1/MOB_A2_2527861/releases/download/v1.0.0/MOB_A2_2527861.apk
+    - **video DEMO link https://github.com/Ngabo-Peacemaker1/MOB_A2_2527861/releases/download/v1.0.0/MOB_A2_2527861_DEMO.mp4
+    - **Final commit hash:** 5102b0d5ae564dc9124a45c44f0def6b78155310
